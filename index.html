@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>丸投げPodcast｜ポッドキャスト編集代行・外注なら音源を送るだけ</title>
+<!--SEO-->
+<meta name="description" content="ポッドキャストの始め方は4STEP。企画・収録・編集・配信を、現役プロデューサーがまるごと代行します。月額29,800円から、単発は1本10,000円から。聞き手（インタビュアー）や出張収録にも対応します。">
+<link rel="canonical" href="https://shutsumi.github.io/marunage-podcast/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="丸投げPodcast｜ポッドキャスト番組、丸投げで始められます">
+<meta property="og:description" content="企画・収録・編集・配信の4STEPを、現役ポッドキャストプロデューサーがまるごと代行。月額29,800円から。">
+<meta property="og:url" content="https://shutsumi.github.io/marunage-podcast/">
+<meta property="og:image" content="https://shutsumi.github.io/marunage-podcast/images/main-visual.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFFFF">
+<!--/SEO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --ground:#FFFFFF; --tint:#F6F5F2;
+  --ink:#1F1F1F; --muted:#666666; --dim:#9A9A9A; --line:#DEDCD7;
+  --accent:#FF3600; --accent-hover:#FF5A2E; --accent-text:#D42D00; --accent-ink:#FFFFFF; --accent-soft:rgba(255,54,0,.10);
+  --wave:#BDBBB6; --cut:#8C8A85;
+  --en:"Jost","Futura","Avenir Next","Helvetica Neue",sans-serif;
+  --jp:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;
+  --gutter:clamp(20px,3.2vw,40px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--ground)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--jp);font-size:15px;line-height:1.9;letter-spacing:.04em;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:var(--gutter)}
+h1,h2,h3{margin:0;font-weight:500;text-wrap:balance}
+p{margin:0}
+.tag{font-family:var(--en);font-size:12px;color:var(--muted);letter-spacing:.06em}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(8px)}
+.site-header .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding-block:18px}
+.tagline{font-family:var(--en);font-size:11.5px;line-height:1.7;letter-spacing:.03em}
+.tagline span{display:block;font-family:var(--jp);font-size:10.5px;margin-top:4px}
+.logo{display:inline-flex;align-items:center;gap:9px;text-decoration:none;justify-self:center}
+.logo .mark{display:inline-flex;align-items:flex-end;gap:2px;height:16px}
+.logo .mark i{display:block;width:3px;background:var(--accent);border-radius:1px}
+.logo .mark i:nth-child(1){height:8px}.logo .mark i:nth-child(2){height:16px}.logo .mark i:nth-child(3){height:11px}
+.logo b{font-family:var(--en);font-weight:500;font-size:21px;letter-spacing:.03em;white-space:nowrap}
+.logo b span{font-weight:300}
+.site-nav{justify-self:end;display:flex;gap:22px;font-family:var(--en);font-size:13px}
+.site-nav a{text-decoration:none}
+.site-nav a:hover{color:var(--accent-text)}
+.nav-cta{color:var(--accent-text);font-weight:500}
+@media (max-width:900px){
+  .site-header .wrap{grid-template-columns:auto 1fr}
+  .tagline{display:none}
+  .logo{justify-self:start}
+  .site-nav a:not(.nav-cta){display:none}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:56px;padding:0 22px 0 26px;font:500 14.5px/1 var(--jp);letter-spacing:.06em;text-decoration:none;border:1px solid transparent;border-radius:2px;cursor:pointer;transition:background-color .2s ease,color .2s ease}
+.btn::after{content:"→";font-family:var(--en);font-size:15px;transition:transform .2s ease}
+.btn:hover::after{transform:translateX(4px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--ground)}
+
+/* hero */
+.hero-visual{position:relative;background:#EDE6DD}
+.hero-visual img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:2000/1329;object-fit:cover}
+.hero-copy{position:absolute;inset:0 0 auto 0;padding:clamp(40px,5.5vw,84px) var(--gutter) 0;display:grid;gap:14px;justify-items:center;text-align:center}
+.hero h1{font-size:clamp(30px,4.4vw,60px);line-height:1.45;letter-spacing:.06em;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--accent);text-shadow:0 0 1px rgba(0,0,0,.08)}
+.hero .tag{color:#4A4540}
+.hero-foot{display:grid;gap:22px;justify-items:center;text-align:center;padding-block:clamp(40px,5vw,64px) clamp(56px,7vw,88px)}
+.hero .lead{color:var(--muted);max-width:40em}
+.hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.hero .price{font-family:var(--en);font-size:14px;color:var(--muted)}
+.hero .price b{font-weight:500;font-size:20px;color:var(--ink)}
+@media (max-width:1000px){
+  .hero-copy{position:static;padding:48px var(--gutter) 32px;background:var(--ground)}
+  .hero-visual{background:var(--ground)}
+}
+
+/* section */
+.sec{border-top:1px solid var(--line);padding-block:clamp(64px,8vw,104px)}
+.sec-head{display:grid;gap:4px;justify-items:center;text-align:center;margin-bottom:clamp(36px,5vw,56px)}
+.sec-head .en-title{font-family:var(--en);font-weight:400;font-size:clamp(34px,4.6vw,50px);line-height:1.15}
+.sec-head .en-title em{font-style:normal;color:var(--accent)}
+.sec-head h2{font-size:15px;letter-spacing:.08em}
+.sec-head .sub{color:var(--muted);font-size:14px;margin-top:12px;max-width:36em}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(4,1fr);counter-reset:s}
+@media (max-width:1100px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.steps{grid-template-columns:1fr}}
+.step{counter-increment:s;background:var(--tint);border-radius:4px;padding:26px 20px 22px;display:grid;gap:10px;align-content:start}
+.step::before{content:"STEP " counter(s);font-family:var(--en);font-size:12px;letter-spacing:.1em;color:var(--accent-text);font-weight:500}
+.step h3{font-size:20px;letter-spacing:.06em}
+.step .who{justify-self:start;font-size:11.5px;padding:1px 10px;border-radius:999px;border:1px solid var(--line);background:var(--ground);color:var(--muted)}
+.step .who.you{border-color:var(--accent-text);color:var(--accent-text)}
+.step > p{font-size:13.5px;color:var(--muted);line-height:1.85}
+.step canvas{display:block;width:100%;height:30px}
+.step .wv{display:grid;gap:4px}
+.step .wv span{font-family:var(--en);font-size:10.5px;color:var(--dim);letter-spacing:.04em}
+.step .inc{font-size:12.5px;color:var(--ink);background:var(--ground);border-radius:3px;padding:8px 10px 8px 30px;position:relative;line-height:1.6}
+.step .inc::before{content:"基本";position:absolute;left:0;top:0;bottom:0;width:22px;display:grid;place-items:center;writing-mode:vertical-rl;font-size:9.5px;letter-spacing:.1em;color:var(--muted);border-right:1px solid var(--line)}
+.step .ol-h{font-family:var(--en);font-size:11px;letter-spacing:.12em;color:var(--dim);border-top:1px dashed var(--line);padding-top:12px;margin-top:2px}
+.step .ol-h::before{content:"+ ";color:var(--accent-text)}
+.ol{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.more-link{display:inline-block;margin-top:22px;font-size:13.5px;text-underline-offset:5px;text-decoration-color:var(--line)}
+.more-link:hover{color:var(--accent-text)}
+.center{text-align:center}
+
+/* price */
+.camp{border:2px solid var(--accent);border-radius:4px;padding:clamp(22px,3.5vw,34px);display:grid;gap:16px;justify-items:start;margin-bottom:28px}
+.camp-h{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:13px;font-weight:500;letter-spacing:.08em;padding:3px 16px;border-radius:2px}
+.camp-rows{display:grid;gap:10px;width:100%}
+.camp-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px;border-bottom:1px dotted var(--line);padding-bottom:8px}
+.camp-name{font-size:14.5px;font-weight:500}
+.camp-price{font-family:var(--en);font-size:15px;color:var(--muted);display:inline-flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.camp-price s{color:var(--dim)}
+.camp-price b{font-weight:500;font-size:clamp(28px,4vw,38px);color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:0}
+.camp-note{font-size:12px;color:var(--muted);line-height:1.8}
+.plans{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.plans{grid-template-columns:1fr}}
+.plan{border:1px solid var(--line);border-radius:4px;padding:28px 24px;display:grid;gap:10px;align-content:start}
+.plan.rec{border-color:var(--accent);background:var(--accent-soft);position:relative}
+.plan-badge{position:absolute;top:-11px;left:24px;background:var(--accent);color:var(--accent-ink);font-size:11.5px;padding:2px 12px;border-radius:2px}
+.plan-name{font-size:17px;font-weight:500;letter-spacing:.08em}
+.amt{display:flex;align-items:baseline;gap:4px;font-size:15px;font-weight:500;line-height:1.1;flex-wrap:wrap}
+.amt b{font-family:var(--en);font-weight:500;font-size:clamp(38px,5vw,48px);color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:0}
+.amt small{font-size:11.5px;color:var(--muted);font-weight:400}
+.plan-sub{font-size:13px;color:var(--muted)}
+.feat{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px;font-size:13.5px;line-height:1.7}
+.feat li{position:relative;padding-left:24px;color:var(--muted)}
+.feat li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:5px;border:1.5px solid var(--accent);border-top:0;border-right:0;transform:rotate(-45deg)}
+.feat li b{color:var(--ink);font-weight:500}
+.extras{display:grid;margin-top:28px;border-top:1px solid var(--line)}
+.extra{display:grid;grid-template-columns:1fr auto;gap:4px 24px;padding-block:18px;border-bottom:1px solid var(--line);align-items:baseline}
+.ex-name{font-size:15px;font-weight:500}
+.ex-name small{font-size:11px;color:var(--dim);margin-left:10px;font-weight:400}
+.ex-price{font-family:var(--en);font-size:14px;color:var(--muted);text-align:right}
+.ex-price b{font-weight:500;font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
+.ex-desc{grid-column:1/-1;font-size:13px;color:var(--muted)}
+.price-note{margin-top:20px;font-size:12px;color:var(--muted);line-height:1.9}
+
+/* works */
+.works{display:grid;gap:28px;grid-template-columns:repeat(2,minmax(0,300px));justify-content:center}
+@media (max-width:560px){.works{grid-template-columns:1fr}}
+.work-card{display:grid;gap:4px;text-decoration:none;align-content:start}
+.cover{display:block;aspect-ratio:1;max-width:100%;border-radius:4px;overflow:hidden;background:var(--tint);margin-bottom:12px}
+.cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.work-card:hover .cover img{transform:scale(1.03)}
+.work-card h3{font-size:16px}
+.work-card p{font-size:13px;color:var(--muted)}
+
+/* faq */
+.faq{max-width:760px;margin-inline:auto;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding-block:20px;display:grid;grid-template-columns:30px 1fr 20px;gap:10px;font-weight:500;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--accent-text)}
+.faq summary::before{content:"Q";font-family:var(--en);font-size:17px;color:var(--accent-text)}
+.faq summary::after{content:"+";font-family:var(--en);color:var(--dim);text-align:right}
+.faq details[open] summary::after{content:"−"}
+.faq .a{padding:0 0 22px 40px;color:var(--muted);font-size:14px}
+
+/* contact band */
+.band{background:var(--accent);color:var(--accent-ink);padding-block:clamp(64px,8vw,104px)}
+.band .wrap{display:grid;gap:40px}
+@media (min-width:900px){.band .wrap{grid-template-columns:1fr 1.25fr;gap:72px}}
+.band .intro{display:grid;gap:8px;align-content:start}
+.band h2{font-size:clamp(26px,3.2vw,34px);letter-spacing:.06em}
+.band .intro .tag{color:var(--accent-ink);opacity:.85}
+.band .intro .txt{margin-top:22px;font-size:14px;line-height:2}
+form{display:grid;gap:14px}
+.ways{display:grid;gap:10px;border:0;margin:0;padding:0}
+.ways legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.way{position:relative;display:grid;grid-template-columns:22px 1fr;gap:2px 14px;align-items:center;background:rgba(0,0,0,.07);padding:18px 22px;cursor:pointer;border:1px solid transparent;border-radius:2px;transition:background-color .2s ease}
+.way:hover{background:rgba(0,0,0,.12)}
+.way input{position:absolute;opacity:0;pointer-events:none}
+.way .ico{width:18px;height:18px;border:1.5px solid currentColor;border-radius:50%;display:grid;place-items:center}
+.way .ico::after{content:"";width:8px;height:8px;border-radius:50%;background:currentColor;opacity:0}
+.way input:checked ~ .ico::after{opacity:1}
+.way:has(input:checked){border-color:var(--accent-ink)}
+.way:has(input:focus-visible){outline:2px solid var(--accent-ink);outline-offset:2px}
+.way b{font-weight:500;font-size:16px}
+.way small{grid-column:2;font-size:12px;opacity:.92;line-height:1.7}
+.fields{display:grid;gap:12px;margin-top:8px}
+.field{display:grid;gap:6px}
+.field label{font-size:12.5px;font-weight:500}
+input,select,textarea{font:inherit;font-size:16px;letter-spacing:.02em;color:var(--ink);background:#FFFFFF;border:1px solid transparent;border-radius:2px;padding:12px 14px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--ink);outline-offset:0}
+.submit{justify-self:start;background:var(--ink);color:#FFFFFF}
+.submit:hover{background:#000000}
+
+/* footer */
+.site-footer{padding-block:56px 40px}
+.site-footer .wrap{display:grid;gap:36px;justify-items:center}
+.foot-row{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-family:var(--en);font-size:12px;color:var(--muted)}
+.foot-row nav{display:flex;flex-wrap:wrap;gap:20px;font-family:var(--jp)}
+.foot-row a{text-decoration:none}
+.foot-row a:hover{color:var(--accent-text)}
+
+/* floating estimate card */
+.float{position:fixed;right:16px;bottom:16px;z-index:40}
+.float-cta{position:relative;width:210px;background:var(--ink);color:#FFFFFF;border-radius:4px;padding:16px 16px 14px;display:grid;gap:4px;justify-items:center;text-align:center;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.18);transition:transform .2s ease}
+.float-cta:hover{transform:translateY(-3px)}
+.float-cta .pill{font-size:11px;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:0 12px}
+.float-cta b{font-weight:500;font-size:14.5px;line-height:1.6}
+.float-cta small{font-family:var(--en);font-size:12px;opacity:.75}
+.float-close{position:absolute;top:-10px;right:-8px;width:24px;height:24px;border-radius:50%;border:0;background:#FFFFFF;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.2);cursor:pointer;font:400 14px/1 var(--en)}
+@media (max-width:600px){.float{left:16px}.float-cta{width:auto;grid-auto-flow:column;justify-content:center;gap:12px;padding:12px 16px}.float-cta b br{display:none}.float-cta small{display:none}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="tagline">Just record, and send.<br>We edit, polish &amp; publish.<span>編集も配信も、丸投げで。</span></p>
+    <a class="logo" href="#top" aria-label="丸投げPodcast トップへ"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><b>Marunage<span> Podcast</span></b></a>
+    <nav class="site-nav" aria-label="メインメニュー">
+      <a href="#steps">Steps</a>
+      <a href="#price">Price</a>
+      <a href="#estimate">Price</a>
+      <a href="#works">Works</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-visual">
+    <img src="images/main-visual.jpg" alt="ヘッドホンをつけて、笑顔でポッドキャストを収録する2人" width="2000" height="1329" fetchpriority="high">
+    <div class="hero-copy">
+      <p class="tag">Podcast Editing &amp; Production ― ポッドキャスト編集代行・番組制作</p>
+      <h1 id="hero-title">ポッドキャスト番組、<br><em>丸投げ</em>で始められます。</h1>
+    </div>
+  </div>
+  <div class="wrap hero-foot">
+    <p class="lead">企画・収録・編集・配信の4STEPを、現役のポッドキャストプロデューサーがまとめて引き受けます。あなたは話すだけです。</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contact">無料で相談する</a>
+      <a class="btn btn-line" href="#price">料金を見る</a>
+    </div>
+    <p class="price">月額プラン 月 <b>29,800</b>円〜（税別）／単発 1本 10,000円〜</p>
+  </div>
+</section>
+
+<div class="wrap">
+<section class="sec" id="steps" aria-labelledby="steps-title">
+  <header class="sec-head">
+    <p class="en-title" aria-hidden="true"><em>4</em> Steps</p>
+    <h2 id="steps-title">ポッドキャストの始め方は、4STEPだけ</h2>
+    <p class="sub">あなたの作業は、月1回の収録だけ。あとはすべて引き受けます。</p>
+  </header>
+
+  <ol class="steps">
+    <li class="step">
+      <h3>企画</h3>
+      <span class="who">一緒に決めます</span>
+      <p>誰に向けて、何を話すか。番組名、1本の長さ、配信の頻度を、オンラインの打ち合わせで決めます。</p>
+    </li>
+    <li class="step">
+      <h3>収録</h3>
+      <span class="who you">あなたの作業はここだけ</span>
+      <p>月1回、1時間半ほど。こちらの質問に答えるだけで、4本分の収録が終わります。ご自身で録って送るだけでも大丈夫です。</p>
+    </li>
+    <li class="step">
+      <h3>編集</h3>
+      <span class="who">丸投げ</span>
+      <p>ノイズ除去、「えー」「あのー」や長い無音のカット、音量調整、BGMまで。音源の受け取りから48時間でお戻しします。</p>
+      <div class="wv" aria-label="編集前と編集後の波形の例">
+        <span>before ― 38:12</span><canvas id="wave-before" height="30"></canvas>
+        <span>after ― 31:40 / -16 LUFS</span><canvas id="wave-after" height="30"></canvas>
+      </div>
+    </li>
+    <li class="step">
+      <h3>配信</h3>
+      <span class="who">丸投げ</span>
+      <p>タイトルと概要欄を作り、決まった日時に公開します。文字起こし・SNS投稿文・YouTube用の動画もお渡しします。</p>
+      <div class="chips"><span class="chip">Spotify</span><span class="chip">Apple Podcasts</span><span class="chip">Amazon Music</span><span class="chip">YouTube</span></div>
+    </li>
+  </ol>
+  <p class="center"><a class="more-link" href="#steps">ポッドキャストの始め方を詳しく読む →</a></p>
+</section>
+
+<section class="sec" id="price" aria-labelledby="price-title">
+  <header class="sec-head">
+    <p class="en-title" aria-hidden="true">Price</p>
+    <h2 id="price-title">料金</h2>
+    <p class="sub">毎月まとめて配信する、月額プランです。単発でのご依頼も承ります。</p>
+  </header>
+
+  <div class="camp">
+    <p class="camp-h">先行3社限定キャンペーン</p>
+    <div class="camp-rows">
+      <div class="camp-row">
+        <span class="camp-name">番組の立ち上げ（初回のみ）</span>
+        <span class="camp-price"><s>49,800円</s><span><b>29,800</b>円</span></span>
+      </div>
+      <div class="camp-row">
+        <span class="camp-name">スタンダード（最初の3か月）</span>
+        <span class="camp-price"><s>月49,800円</s><span>月<b>29,800</b>円</span></span>
+      </div>
+    </div>
+    <p class="camp-note">2026年12月31日までにお申し込みの先着3社が対象です。通常価格は立ち上げ49,800円・スタンダード月49,800円で、キャンペーン終了後に適用します。スタンダードは4か月目から通常価格になります。</p>
+    <a class="btn btn-primary" href="#contact">この価格で相談する</a>
+  </div>
+
+  <div class="plans">
+    <article class="plan">
+      <p class="plan-name">ライト</p>
+      <p class="amt">月<b>29,800</b>円<small>（税別）</small></p>
+      <p class="plan-sub">月2本。まずは続けてみたい方に。</p>
+      <ul class="feat">
+        <li>編集（ノイズ除去・カット・音量調整・BGM）</li>
+        <li>Spotify・Apple Podcasts・Amazon Musicへの配信</li>
+        <li>タイトル・概要欄・チャプターの作成</li>
+        <li>文字起こし／SNS投稿文3本／YouTube用の動画</li>
+        <li>48時間でお戻し</li>
+      </ul>
+    </article>
+    <article class="plan rec">
+      <p class="plan-badge">いちばん選ばれています</p>
+      <p class="plan-name">スタンダード</p>
+      <p class="amt">月<b>49,800</b>円<small>（税別）</small></p>
+      <p class="plan-sub">月4本。毎週配信したい方に。</p>
+      <ul class="feat">
+        <li>ライトのすべて（月4本）</li>
+        <li><b>聞き手として収録に同席</b>（月1回・90分で4本録り）</li>
+        <li>事前の質問リストと構成メモ</li>
+        <li>月次の再生数レポート</li>
+      </ul>
+    </article>
+    <article class="plan">
+      <p class="plan-name">ビデオ</p>
+      <p class="amt">月<b>79,800</b>円〜<small>（税別）</small></p>
+      <p class="plan-sub">YouTubeでも見てもらいたい方に。</p>
+      <ul class="feat">
+        <li>スタンダードのすべて</li>
+        <li>カメラ収録のビデオポッドキャスト</li>
+        <li>字幕付きの動画編集</li>
+        <li>縦型のショート動画 月3本</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="extras">
+    <div class="extra">
+      <span class="ex-name">番組の立ち上げ<small>初回のみ</small></span>
+      <span class="ex-price"><b>49,800</b>円</span>
+      <span class="ex-desc">企画会議、番組名、カバーアート、ジングル、配信設定まで。</span>
+    </div>
+    <div class="extra">
+      <span class="ex-name">単発のご依頼<small>1本ごと</small></span>
+      <span class="ex-price"><b>10,000</b>円〜</span>
+      <span class="ex-desc">30分以内の編集と配信。まず1本試したい方へ。</span>
+    </div>
+    <div class="extra">
+      <span class="ex-name">出張収録<small>オプション</small></span>
+      <span class="ex-price">お見積もり</span>
+      <span class="ex-desc">機材を持って伺います。交通費は別途です。</span>
+    </div>
+  </div>
+
+  <p class="price-note">表示は税別です。月額プランは3か月からのご契約で、以降は1か月ごとに更新・停止できます。30分を超える番組は、長さに応じてお見積もりします。</p>
+</section>
+
+<section class="sec" id="works" aria-labelledby="works-title">
+  <header class="sec-head">
+    <p class="en-title" aria-hidden="true">Works</p>
+    <h2 id="works-title">現役プロデューサーが担当します</h2>
+    <p class="sub">いまも番組を企画・制作・配信しているプロデューサーが、あなたの番組を担当します。</p>
+  </header>
+  <div class="works">
+    <a class="work-card" href="https://open.spotify.com/show/2ejVpO7agNaYxona1GetHp" rel="noopener">
+      <span class="cover"><img src="images/rafu-joto.jpg" alt="ポッドキャスト「つつみヒガシの“ラフ上等”」のカバーアート" width="600" height="600" loading="lazy"></span>
+      <span class="tag">Podcast ― Spotify</span>
+      <h3>つつみヒガシの“ラフ上等”</h3>
+      <p>企画・編集・配信</p>
+    </a>
+    <a class="work-card" href="https://open.spotify.com/show/4FgjEdStFUFC2i9Ysyo0Ew" rel="noopener">
+      <span class="cover"><img src="images/flamengo-radio.jpg" alt="ポッドキャスト「Flamengo? Radio」のカバーアート" width="600" height="600" loading="lazy"></span>
+      <span class="tag">Podcast ― Spotify</span>
+      <h3>Flamengo? Radio</h3>
+      <p>企画・編集・配信</p>
+    </a>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-title">
+  <header class="sec-head">
+    <p class="en-title" aria-hidden="true">FAQ</p>
+    <h2 id="faq-title">よくある質問</h2>
+  </header>
+  <div class="faq">
+    <details open><summary>ポッドキャスト編集を外注する費用の相場は？</summary><p class="a">カットとノイズ除去のみで1本5,000〜10,000円、BGMや音量調整を含むと10,000〜25,000円、配信代行まで含むと25,000〜50,000円程度が目安です。丸投げPodcastは月2本の月額29,800円からで、単発のご依頼は1本10,000円からです。</p></details>
+    <details><summary>見積もりだけでも依頼できますか？</summary><p class="a">はい、相談とお見積もりは無料です。金額にご納得いただけた場合のみ、作業を始めます。</p></details>
+    <details><summary>スマホで録音した音源でも大丈夫ですか？</summary><p class="a">はい、大丈夫です。ノイズ除去と音量調整で聴きやすく整えます。</p></details>
+    <details><summary>配信アカウントは誰の名義になりますか？</summary><p class="a">お客さまの名義で作成します。契約が終わっても、番組とリスナーはお客さまの手元に残ります。</p></details>
+    <details><summary>納期はどのくらいですか？</summary><p class="a">音源を受け取ってから5営業日以内に、確認用の音源をお送りします。修正は1回まで無料です。</p></details>
+  </div>
+</section>
+</div>
+
+<section class="band" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="contact-title">お問い合わせ</h2>
+      <p class="tag">Contact</p>
+      <p class="txt">相談とお見積もりは無料です。番組の構想がまだ固まっていなくても大丈夫です。2営業日以内にご返信します。</p>
+    </div>
+    <form action="#" method="post">
+      <fieldset class="ways">
+        <legend>ご用件</legend>
+        <label class="way" for="w-estimate"><input type="radio" id="w-estimate" name="way" value="見積もり" checked><span class="ico" aria-hidden="true"></span><b>見積もりを依頼する</b><small>収録時間や本数をうかがい、料金をご提示します。</small></label>
+        <label class="way" for="w-talk"><input type="radio" id="w-talk" name="way" value="相談"><span class="ico" aria-hidden="true"></span><b>まずは少し話してみる</b><small>オンラインで30分、番組の構想をお聞きします。</small></label>
+        <label class="way" for="w-ask"><input type="radio" id="w-ask" name="way" value="質問"><span class="ico" aria-hidden="true"></span><b>質問する</b><small>オプションや出張収録について、気軽にどうぞ。</small></label>
+      </fieldset>
+      <div class="fields">
+        <div class="field"><label for="c-name">お名前</label><input id="c-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="c-email">メールアドレス</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="c-msg">詳細（任意）</label><textarea id="c-msg" name="message" placeholder="例：社長インタビューの番組を月2本配信したい。聞き手もお願いしたい。"></textarea></div>
+      </div>
+      <button class="btn submit" type="submit">送信する</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="丸投げPodcast トップへ"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><b>Marunage<span> Podcast</span></b></a>
+    <div class="foot-row">
+      <span>© 2026 Marunage Podcast</span>
+      <nav aria-label="フッター"><a href="#steps">4STEP</a><a href="#price">料金</a><a href="#works">実績</a><a href="#faq">よくある質問</a><a href="#contact">お問い合わせ</a></nav>
+    </div>
+  </div>
+</footer>
+
+<div class="float" id="float">
+  <a class="float-cta" href="#contact"><span class="pill">相談無料</span><b>お見積もり依頼は<br>こちらから</b><small>先行3社 29,800円〜</small></a>
+  <button class="float-close" id="float-close" type="button" aria-label="見積もり案内を閉じる">×</button>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"ProfessionalService",
+      "@id":"https://shutsumi.github.io/marunage-podcast/#service",
+      "name":"丸投げPodcast",
+      "alternateName":"Marunage Podcast",
+      "description":"企画・収録・編集・配信の4STEPを現役ポッドキャストプロデューサーが代行するポッドキャスト編集代行・番組制作サービス。聞き手や出張収録などのオプションあり。",
+      "url":"https://shutsumi.github.io/marunage-podcast/",
+      "areaServed":"JP",
+      "priceRange":"¥29,800〜",
+      "hasOfferCatalog":{
+        "@type":"OfferCatalog",
+        "name":"丸投げPodcastの料金",
+        "itemListElement":[
+          {"@type":"Offer","name":"ライト（月2本・編集＋配信）","price":"29800","priceCurrency":"JPY"},
+          {"@type":"Offer","name":"スタンダード（月4本・聞き手同席）","price":"49800","priceCurrency":"JPY"},
+          {"@type":"Offer","name":"ビデオ（月4本・ビデオポッドキャスト）","price":"79800","priceCurrency":"JPY"},
+          {"@type":"Offer","name":"番組の立ち上げ（初回のみ）","price":"49800","priceCurrency":"JPY"},
+          {"@type":"Offer","name":"単発（30分以内・1本）","price":"10000","priceCurrency":"JPY"}
+        ]
+      }
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"ポッドキャスト編集を外注する費用の相場は？","acceptedAnswer":{"@type":"Answer","text":"カットとノイズ除去のみで1本5,000〜10,000円、BGMや音量調整を含むと10,000〜25,000円、配信代行まで含むと25,000〜50,000円程度が目安です。丸投げPodcastは月2本の月額29,800円からで、単発のご依頼は1本10,000円からです。"}},
+        {"@type":"Question","name":"見積もりだけでも依頼できますか？","acceptedAnswer":{"@type":"Answer","text":"はい、相談とお見積もりは無料です。金額にご納得いただけた場合のみ、作業を始めます。"}},
+        {"@type":"Question","name":"スマホで録音した音源でも大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、大丈夫です。ノイズ除去と音量調整で聴きやすく整えます。"}},
+        {"@type":"Question","name":"配信アカウントは誰の名義になりますか？","acceptedAnswer":{"@type":"Answer","text":"お客さまの名義で作成します。契約が終わっても、番組とリスナーはお客さまの手元に残ります。"}},
+        {"@type":"Question","name":"納期はどのくらいですか？","acceptedAnswer":{"@type":"Answer","text":"音源を受け取ってから5営業日以内に、確認用の音源をお送りします。修正は1回まで無料です。"}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  // STEP 3 の小さな波形。グレーの低い部分が、編集でカットされる箇所。
+  var cuts=[[.07,.11],[.24,.31],[.46,.49],[.63,.72],[.86,.89]];
+  function rng(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};}
+  function inCut(t){for(var c=0;c<cuts.length;c++){if(t>=cuts[c][0]&&t<cuts[c][1])return true;}return false;}
+  function samples(n){
+    var r=rng(42),out=[],env=.5;
+    for(var i=0;i<n;i++){
+      var t=i/n; env+=(r()-.5)*.18; env=Math.max(.18,Math.min(.9,env));
+      out.push({t:t,v:env*(.35+r()*.65)});
+    }
+    return out;
+  }
+  function draw(){
+    var cs=getComputedStyle(document.documentElement);
+    var wave=cs.getPropertyValue("--wave").trim(), cut=cs.getPropertyValue("--cut").trim(), accent=cs.getPropertyValue("--accent").trim();
+    var dpr=window.devicePixelRatio||1;
+    [["wave-before",false],["wave-after",true]].forEach(function(cfg){
+      var cv=document.getElementById(cfg[0]); if(!cv)return;
+      var w=cv.clientWidth,h=cv.clientHeight||30; cv.width=w*dpr; cv.height=h*dpr;
+      var ctx=cv.getContext("2d"); ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,w,h);
+      var step=3, n=Math.floor(w/step), data=samples(n), mid=h/2;
+      if(!cfg[1]){
+        data.forEach(function(d,i){
+          var c=inCut(d.t), amp=(c?.12:d.v*.8)*(h/2-1);
+          ctx.fillStyle=c?cut:wave; ctx.globalAlpha=c?.5:1;
+          ctx.fillRect(i*step,mid-amp,2,Math.max(1,amp*2));
+        });
+        ctx.globalAlpha=1;
+      }else{
+        var kept=data.filter(function(d){return !inCut(d.t);}), s=w/(kept.length*step);
+        ctx.fillStyle=accent;
+        kept.forEach(function(d,i){
+          var amp=Math.min(1,.45+d.v*.6)*(h/2-1);
+          ctx.fillRect(i*step*s,mid-amp,Math.max(1.6,2*s),amp*2);
+        });
+      }
+    });
+  }
+  var raf; function schedule(){cancelAnimationFrame(raf);raf=requestAnimationFrame(draw);}
+  window.addEventListener("resize",schedule);
+  schedule();
+
+
+  var fl=document.getElementById("float"), fc=document.getElementById("float-close");
+  if(fc&&fl){fc.addEventListener("click",function(){fl.hidden=true;});}
+})();
+</script>
+</body>
+</html>

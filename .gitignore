@@ -1,0 +1,11 @@
+_backup_*.html
+_body.html
+_jsonld.html
+_script.js
+_build.py
+preview.html
+.DS_Store
+*請求書*
+*見積書*
+*契約書*
+*領収書*
