@@ -133,7 +133,7 @@ p{margin:0}
 .camp-price s{color:var(--dim)}
 .camp-price b{font-weight:500;font-size:clamp(28px,4vw,38px);color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:0}
 .camp-note{font-size:12px;color:var(--muted);line-height:1.8}
-.plans{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.plans{display:grid;gap:16px;grid-template-columns:repeat(2,1fr);max-width:760px;margin-inline:auto}
 @media (max-width:900px){.plans{grid-template-columns:1fr}}
 .plan{border:1px solid var(--line);border-radius:4px;padding:28px 24px;display:grid;gap:10px;align-content:start}
 .plan.rec{border-color:var(--accent);background:var(--accent-soft);position:relative}
@@ -349,17 +349,6 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ink);outline-off
         <li>月次の再生数レポート</li>
       </ul>
     </article>
-    <article class="plan">
-      <p class="plan-name">ビデオ</p>
-      <p class="amt">月<b>79,800</b>円〜<small>（税別）</small></p>
-      <p class="plan-sub">YouTubeでも見てもらいたい方に。</p>
-      <ul class="feat">
-        <li>スタンダードのすべて</li>
-        <li>カメラ収録のビデオポッドキャスト</li>
-        <li>字幕付きの動画編集</li>
-        <li>縦型のショート動画 月3本</li>
-      </ul>
-    </article>
   </div>
 
   <div class="extras">
@@ -372,6 +361,11 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ink);outline-off
       <span class="ex-name">単発のご依頼<small>1本ごと</small></span>
       <span class="ex-price"><b>10,000</b>円〜</span>
       <span class="ex-desc">30分以内の編集と配信。まず1本試したい方へ。</span>
+    </div>
+    <div class="extra">
+      <span class="ex-name">ビデオポッドキャスト<small>オプション</small></span>
+      <span class="ex-price">ご相談ください</span>
+      <span class="ex-desc">YouTube向けに、カメラで撮影する番組にも対応しています。</span>
     </div>
     <div class="extra">
       <span class="ex-name">出張収録<small>オプション</small></span>
@@ -480,7 +474,6 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--ink);outline-off
         "itemListElement":[
           {"@type":"Offer","name":"ライト（月2本・編集＋配信）","price":"29800","priceCurrency":"JPY"},
           {"@type":"Offer","name":"スタンダード（月4本・聞き手同席）","price":"49800","priceCurrency":"JPY"},
-          {"@type":"Offer","name":"ビデオ（月4本・ビデオポッドキャスト）","price":"79800","priceCurrency":"JPY"},
           {"@type":"Offer","name":"番組の立ち上げ（初回のみ）","price":"49800","priceCurrency":"JPY"},
           {"@type":"Offer","name":"単発（30分以内・1本）","price":"10000","priceCurrency":"JPY"}
         ]
